@@ -14,8 +14,8 @@
 
     body {
       font-family: 'Roboto', sans-serif;
-      background-color: #f5f5f5;
-      color: #000;
+      background-color: #e3f2fd;
+      color: #333;
       padding: 40px 20px;
       display: flex;
       justify-content: center;
@@ -26,11 +26,11 @@
     .resume-container {
       width: 210mm;
       min-height: 297mm;
-      background: #fff;
+      background: #ffffff;
       display: grid;
       grid-template-columns: 270px 1fr;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+      border-radius: 12px;
       overflow: hidden;
       animation: fadeIn 0.8s ease-in-out;
     }
@@ -41,7 +41,8 @@
     }
 
     .sidebar {
-      background-color: #eaeaea;
+      background-color: #1976d2;
+      color: #fff;
       padding: 30px 20px;
       display: flex;
       flex-direction: column;
@@ -57,7 +58,7 @@
       height: 120px;
       border-radius: 50%;
       margin-bottom: 20px;
-      border: 2px solid #000;
+      border: 2px solid #fff;
       object-fit: cover;
     }
 
@@ -65,6 +66,7 @@
       font-family: 'Roboto Slab', serif;
       font-size: 20px;
       margin-bottom: 10px;
+      color: #fff;
     }
 
     .sidebar h3 {
@@ -72,23 +74,25 @@
       font-size: 16px;
       margin-top: 20px;
       margin-bottom: 8px;
-      border-bottom: 1px solid #000;
+      border-bottom: 1px solid #90caf9;
       padding-bottom: 4px;
     }
 
-    .sidebar p, .sidebar li {
+    .sidebar p,
+    .sidebar li {
       font-size: 14px;
       margin-bottom: 6px;
       line-height: 1.5;
     }
 
     .sidebar a {
-      color: #000;
+      color: #ffeb3b;
       text-decoration: none;
     }
 
     .main {
       padding: 30px;
+      background-color: #fafafa;
     }
 
     h2 {
@@ -96,8 +100,9 @@
       font-weight: 700;
       margin-bottom: 10px;
       font-size: 18px;
-      border-bottom: 1.5px solid #000;
+      border-bottom: 2px solid #64b5f6;
       padding-bottom: 4px;
+      color: #0d47a1;
     }
 
     .section {
@@ -110,7 +115,7 @@
 
     ul li {
       margin-bottom: 8px;
-      line-height: 1.5;
+      line-height: 1.6;
     }
 
     .job {
@@ -120,18 +125,32 @@
     .job-title {
       font-weight: 700;
       font-size: 15px;
+      color: #1565c0;
     }
 
     .job-date {
       font-style: italic;
       font-size: 13px;
-      color: #333;
+      color: #666;
     }
 
     .skills ul li {
       padding-left: 10px;
       position: relative;
-      border-left: 2px solid #000;
+      border-left: 3px solid #42a5f5;
+    }
+
+    .skills ul li::before {
+      content: "•";
+      position: absolute;
+      left: -12px;
+      color: #42a5f5;
+    }
+
+    /* Hover Effects (Optional) */
+    .sidebar a:hover {
+      text-decoration: underline;
+      color: #fff176;
     }
 
     /* Print Styles */
@@ -151,6 +170,14 @@
 
       .sidebar img {
         display: none;
+      }
+
+      .sidebar,
+      .main,
+      h2,
+      .job-title {
+        color: #000 !important;
+        background-color: white !important;
       }
     }
   </style>
@@ -231,19 +258,14 @@
           </ul>
         </div>
       </div>
-
-
       
 <div class="resume2">
-<a href="index2.html">Resume 2</a>
+<a href="index.html">Resume</a>
 </div>
 
 
 <div class="resume3">
 <a href="index3.html">Resume 3</a> 
-</div>
-
-
 </div>
     </div>
   </div>

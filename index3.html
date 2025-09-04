@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rohan Negi - Resume</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
   <style>
     * {
       margin: 0;
@@ -13,77 +13,59 @@
     }
 
     body {
-      font-family: 'Roboto', sans-serif;
-      background-color: #f5f5f5;
-      color: #000;
-      padding: 40px 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
+      font-family: 'Montserrat', sans-serif;
+      background: #f0f4f8;
+      color: #333;
+      padding: 30px;
     }
 
-    .resume-container {
-      width: 210mm;
-      min-height: 297mm;
-      background: #fff;
+    .resume {
       display: grid;
-      grid-template-columns: 270px 1fr;
+      grid-template-columns: 260px 1fr;
+      max-width: 1000px;
+      margin: auto;
+      background: #fff;
+      border-radius: 12px;
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-      border-radius: 10px;
       overflow: hidden;
-      animation: fadeIn 0.8s ease-in-out;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
     }
 
     .sidebar {
-      background-color: #eaeaea;
+      background: #e3f2fd;
       padding: 30px 20px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    .sidebar-top {
-      flex-grow: 1;
     }
 
     .sidebar img {
-      width: 110px;
-      height: 120px;
-      border-radius: 50%;
-      margin-bottom: 20px;
-      border: 2px solid #000;
+      width: 100px;
+      height: 100px;
       object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      border: 3px solid #2196f3;
     }
 
     .sidebar h1 {
-      font-family: 'Roboto Slab', serif;
       font-size: 20px;
       margin-bottom: 10px;
+      color: #0d47a1;
     }
 
     .sidebar h3 {
-      font-family: 'Roboto Slab', serif;
-      font-size: 16px;
       margin-top: 20px;
-      margin-bottom: 8px;
-      border-bottom: 1px solid #000;
+      font-size: 14px;
+      color: #1565c0;
+      border-bottom: 1px solid #90caf9;
       padding-bottom: 4px;
     }
 
-    .sidebar p, .sidebar li {
-      font-size: 14px;
-      margin-bottom: 6px;
-      line-height: 1.5;
+    .sidebar p,
+    .sidebar li {
+      font-size: 13px;
+      margin: 6px 0;
     }
 
     .sidebar a {
-      color: #000;
+      color: #0d47a1;
       text-decoration: none;
     }
 
@@ -91,17 +73,16 @@
       padding: 30px;
     }
 
-    h2 {
-      font-family: 'Roboto Slab', serif;
-      font-weight: 700;
-      margin-bottom: 10px;
-      font-size: 18px;
-      border-bottom: 1.5px solid #000;
-      padding-bottom: 4px;
-    }
-
     .section {
       margin-bottom: 25px;
+    }
+
+    .section h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #1976d2;
+      border-bottom: 2px solid #2196f3;
+      padding-bottom: 5px;
     }
 
     ul {
@@ -110,7 +91,6 @@
 
     ul li {
       margin-bottom: 8px;
-      line-height: 1.5;
     }
 
     .job {
@@ -118,35 +98,26 @@
     }
 
     .job-title {
-      font-weight: 700;
+      font-weight: 600;
       font-size: 15px;
+      color: #0d47a1;
     }
 
     .job-date {
-      font-style: italic;
       font-size: 13px;
-      color: #333;
+      font-style: italic;
+      color: #555;
     }
 
-    .skills ul li {
-      padding-left: 10px;
-      position: relative;
-      border-left: 2px solid #000;
-    }
-
-    /* Print Styles */
     @media print {
       body {
         background: white;
         padding: 0;
-        display: block;
       }
 
-      .resume-container {
+      .resume {
         box-shadow: none;
         border-radius: 0;
-        width: 100%;
-        min-height: auto;
       }
 
       .sidebar img {
@@ -156,26 +127,24 @@
   </style>
 </head>
 <body>
-  <div class="resume-container">
+  <div class="resume">
     <div class="sidebar">
-      <div class="sidebar-top">
-        <img src="rohan.png" alt="Rohan Negi" />
-        <h1>Rohan Negi</h1>
+      <img src="rohan.png" alt="Rohan Negi" />
+      <h1>Rohan Negi</h1>
 
-        <h3>Profile Summary</h3>
-        <p>Passionate and disciplined baker with hands-on experience in baking, cake decoration, and pastry preparation. Known for creativity, hygiene practices, and teamwork in fast-paced kitchen environments.</p>
+      <h3>Profile Summary</h3>
+      <p>Passionate and disciplined baker with hands-on experience in baking, cake decoration, and pastry preparation. Known for creativity, hygiene practices, and teamwork in fast-paced kitchen environments.</p>
 
-        <h3>Contact</h3>
-        <p><strong>Email:</strong><br><a href="mailto:negirohan887@gmail.com">negirohan887@gmail.com</a></p>
-        <p><strong>Phone:</strong><br>6395271496</p>
-        <p><strong>Location:</strong><br>Vasundhara, Ghaziabad</p>
+      <h3>Contact</h3>
+      <p><strong>Email:</strong><br><a href="mailto:negirohan887@gmail.com">negirohan887@gmail.com</a></p>
+      <p><strong>Phone:</strong><br>6395271496</p>
+      <p><strong>Location:</strong><br>Vasundhara, Ghaziabad</p>
 
-        <h3>Languages</h3>
-        <ul>
-          <li>Hindi – Native</li>
-          <li>English – Proficient</li>
-        </ul>
-      </div>
+      <h3>Languages</h3>
+      <ul>
+        <li>Hindi – Native</li>
+        <li>English – Proficient</li>
+      </ul>
     </div>
 
     <div class="main">
@@ -195,7 +164,7 @@
 
       <div class="section">
         <h2>Skills</h2>
-        <ul class="skills">
+        <ul>
           <li>Baking techniques</li>
           <li>Pastry preparation</li>
           <li>Cake decoration</li>
@@ -231,20 +200,6 @@
           </ul>
         </div>
       </div>
-
-
-      
-<div class="resume2">
-<a href="index2.html">Resume 2</a>
-</div>
-
-
-<div class="resume3">
-<a href="index3.html">Resume 3</a> 
-</div>
-
-
-</div>
     </div>
   </div>
 </body>
