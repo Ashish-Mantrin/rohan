@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Rohan Negi - Resume</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rohan Negi – Commis III Resume</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -13,9 +16,9 @@
     }
 
     body {
-      font-family: 'Roboto', sans-serif;
-      background-color: #e3f2fd;
-      color: #333;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f9f9f9, #e2e8f0);
+      color: #000000;
       padding: 40px 20px;
       display: flex;
       justify-content: center;
@@ -29,19 +32,26 @@
       background: #ffffff;
       display: grid;
       grid-template-columns: 270px 1fr;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
       border-radius: 12px;
       overflow: hidden;
       animation: fadeIn 0.8s ease-in-out;
     }
 
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     .sidebar {
-      background-color: #1976d2;
+      background: linear-gradient(180deg, #4fd1c5, #81e6d9);
       color: #fff;
       padding: 30px 20px;
       display: flex;
@@ -49,64 +59,54 @@
       justify-content: space-between;
     }
 
-    .sidebar-top {
-      flex-grow: 1;
-    }
-
     .sidebar img {
-      width: 110px;
-      height: 120px;
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
       margin-bottom: 20px;
-      border: 2px solid #fff;
-      object-fit: cover;
     }
 
     .sidebar h1 {
-      font-family: 'Roboto Slab', serif;
-      font-size: 20px;
+      font-family: 'Playfair Display', serif;
+      font-size: 26px;
       margin-bottom: 10px;
-      color: #fff;
     }
 
     .sidebar h3 {
-      font-family: 'Roboto Slab', serif;
-      font-size: 16px;
-      margin-top: 20px;
+      font-size: 18px;
+      margin-top: 24px;
       margin-bottom: 8px;
-      border-bottom: 1px solid #90caf9;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
       padding-bottom: 4px;
     }
 
     .sidebar p,
     .sidebar li {
-      font-size: 14px;
+      font-size: 15px;
       margin-bottom: 6px;
       line-height: 1.5;
     }
 
     .sidebar a {
-      color: #ffeb3b;
+      color: #f7fafc;
       text-decoration: none;
     }
 
     .main {
-      padding: 30px;
-      background-color: #fafafa;
+      padding: 40px;
     }
 
     h2 {
-      font-family: 'Roboto Slab', serif;
-      font-weight: 700;
-      margin-bottom: 10px;
-      font-size: 18px;
-      border-bottom: 2px solid #64b5f6;
-      padding-bottom: 4px;
-      color: #0d47a1;
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      border-bottom: 2px solid #4fd1c5;
+      padding-bottom: 5px;
+      color: #2b6cb0;
     }
 
     .section {
-      margin-bottom: 25px;
+      margin-bottom: 30px;
     }
 
     ul {
@@ -114,46 +114,52 @@
     }
 
     ul li {
-      margin-bottom: 8px;
+      margin-bottom: 10px;
       line-height: 1.6;
     }
 
     .job {
-      margin-bottom: 15px;
+      margin-bottom: 20px;
     }
 
     .job-title {
-      font-weight: 700;
-      font-size: 15px;
-      color: #1565c0;
+      font-weight: 600;
+      font-size: 16px;
+      color: #2c5282;
     }
 
     .job-date {
       font-style: italic;
-      font-size: 13px;
-      color: #666;
+      font-size: 14px;
+      color: #718096;
+      margin-bottom: 6px;
     }
 
     .skills ul li {
-      padding-left: 10px;
+      padding-left: 12px;
       position: relative;
-      border-left: 3px solid #42a5f5;
+      border-left: 3px solid #4fd1c5;
     }
 
-    .skills ul li::before {
-      content: "•";
+    .sidebar ul li::before {
+      content: '•';
+      color: #fff;
+      margin-right: 8px;
+    }
+
+    .main ul.skills li::before {
+      content: '✔';
       position: absolute;
-      left: -12px;
-      color: #42a5f5;
+      left: -18px;
+      color: #4fd1c5;
+      font-size: 14px;
     }
 
-    /* Hover Effects (Optional) */
-    .sidebar a:hover {
-      text-decoration: underline;
-      color: #fff176;
+    .sidebar strong {
+      display: inline-block;
+      margin-bottom: 2px;
     }
 
-    /* Print Styles */
     @media print {
       body {
         background: white;
@@ -172,16 +178,13 @@
         display: none;
       }
 
-      .sidebar,
-      .main,
-      h2,
-      .job-title {
+      a {
         color: #000 !important;
-        background-color: white !important;
       }
     }
   </style>
 </head>
+
 <body>
   <div class="resume-container">
     <div class="sidebar">
@@ -189,26 +192,43 @@
         <img src="rohan.png" alt="Rohan Negi" />
         <h1>Rohan Negi</h1>
 
-        <h3>Profile Summary</h3>
-        <p>Passionate and disciplined baker with hands-on experience in baking, cake decoration, and pastry preparation. Known for creativity, hygiene practices, and teamwork in fast-paced kitchen environments.</p>
+        <div class="section">
+          <h3>🎯 Career Objective</h3>
+          <p>To obtain the role of Commis III in a professional kitchen where I can utilize my bakery and confectionery
+            training, contribute to high-quality food production, and develop under skilled chefs in a hotel
+            environment.</p>
+        </div>
 
-        <h3>Contact</h3>
+        <h3>📞 Contact</h3>
         <p><strong>Email:</strong><br><a href="mailto:negirohan887@gmail.com">negirohan887@gmail.com</a></p>
         <p><strong>Phone:</strong><br>6395271496</p>
         <p><strong>Location:</strong><br>Vasundhara, Ghaziabad</p>
 
-        <h3>Languages</h3>
+        <h3>🌐 Languages</h3>
         <ul>
           <li>Hindi – Native</li>
           <li>English – Proficient</li>
+        </ul>
+
+        <h3>🎨 Hobbies</h3>
+        <ul>
+          <li>Cooking</li>
+          <li>Travelling</li>
+          <li>Reading Books</li>
         </ul>
       </div>
     </div>
 
     <div class="main">
       <div class="section">
-        <h2>Objective</h2>
-        <p>To secure a challenging position in the bakery and confectionery industry where I can apply my knowledge and skills while continuously learning and contributing to the team’s success.</p>
+        <h2>Professional Summary</h2>
+        <p>Dedicated and detail-oriented bakery professional with hands-on experience in pastry preparation, bread
+          baking,
+          and cake decoration. Trained under experienced chefs at Theo’s Food Pvt. Ltd, with strong understanding of
+          hygiene,
+          food safety, and kitchen operations. Seeking a Commis III position in a reputed hotel to contribute culinary
+          skills
+          and grow in the hospitality industry.</p>
       </div>
 
       <div class="section">
@@ -221,53 +241,44 @@
       </div>
 
       <div class="section">
-        <h2>Skills</h2>
-        <ul class="skills">
-          <li>Baking techniques</li>
-          <li>Pastry preparation</li>
-          <li>Cake decoration</li>
-          <li>Inventory management</li>
-          <li>Customer service</li>
-          <li>Teamwork & communication</li>
-          <li>Time management</li>
-          <li>Product innovation</li>
-        </ul>
+        <h2>Professional Experience</h2>
+
+        <div class="job">
+          <div class="job-title">Job Training – Theo’s Food Pvt. Ltd, Noida</div>
+          <div class="job-date">March 2025 – Present</div>
+          <ul>
+            <li>Assisted in daily bakery operations including dough preparation and baking procedures.</li>
+            <li>Supported the team in packaging and maintaining display counters.</li>
+            <li>Handled guest queries and ensured timely service and cleanliness.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-title">Industrial Training – Theo’s Food Pvt. Ltd, Noida</div>
+          <div class="job-date">Sept 2024 – March 2025</div>
+          <ul>
+            <li>Prepared breads, cookies, and pastries under supervision of pastry chefs.</li>
+            <li>Maintained hygiene and food safety protocols as per industry standards.</li>
+            <li>Assisted in ingredient preparation, equipment handling, and stock rotation.</li>
+          </ul>
+        </div>
       </div>
 
       <div class="section">
-        <h2>Experience</h2>
-
-        <div class="job">
-          <div class="job-title">Industrial Training – Theos Manufacturing Pvt. Ltd., Noida</div>
-          <div class="job-date">March 2025 – Present</div>
-          <ul>
-            <li>Prepared bread, pastries, and custom cakes for events.</li>
-            <li>Maintained cleanliness and food safety standards.</li>
-            <li>Worked with senior chefs on product development.</li>
-            <li>Assisted in managing inventory and baking equipment.</li>
-          </ul>
-        </div>
-
-        <div class="job">
-          <div class="job-title">Job Training – Theos Manufacturing Pvt. Ltd., Noida</div>
-          <div class="job-date">Sept 2024 – March 2025</div>
-          <ul>
-            <li>Supported baking processes and dough preparation.</li>
-            <li>Handled packaging and customer queries.</li>
-            <li>Helped with pastry decorating and display setup.</li>
-          </ul>
-        </div>
+        <h2>Key Skills</h2>
+        <ul class="skills">
+          <li>Bakery & Pastry Production</li>
+          <li>Basic Kitchen Operations</li>
+          <li>Cake Decoration</li>
+          <li>Food Safety & Hygiene</li>
+          <li>Team Coordination</li>
+          <li>Inventory Handling</li>
+          <li>Time Management</li>
+          <li>Creativity in Presentation</li>
+        </ul>
       </div>
-      
-<div class="resume2">
-<a href="index.html">Resume</a>
-</div>
-
-
-<div class="resume3">
-<a href="index3.html">Resume 3</a> 
-</div>
     </div>
   </div>
 </body>
+
 </html>

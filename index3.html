@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rohan Negi - Resume</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
+  <title>Rohan Negi – Resume</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Merriweather:wght@700&display=swap"
+    rel="stylesheet">
   <style>
+    :root {
+      --primary: #1a237e;
+      --accent: #f9a825;
+      --light: #f5f5f5;
+      --text: #333;
+    }
+
     * {
       margin: 0;
       padding: 0;
@@ -13,144 +23,193 @@
     }
 
     body {
-      font-family: 'Montserrat', sans-serif;
-      background: #f0f4f8;
-      color: #333;
-      padding: 30px;
+      font-family: 'Poppins', sans-serif;
+      background: var(--light);
+      color: var(--text);
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
     }
 
     .resume {
-      display: grid;
-      grid-template-columns: 260px 1fr;
-      max-width: 1000px;
-      margin: auto;
+      width: 100%;
+      max-width: 960px;
       background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
       overflow: hidden;
     }
 
     .sidebar {
-      background: #e3f2fd;
-      padding: 30px 20px;
+      background: #eeeeee;
+      padding: 30px 25px;
+      color: #111;
+    }
+
+    .sidebar h2 {
+      font-size: 20px;
+      color: var(--primary);
+      margin-bottom: 15px;
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 5px;
+      font-family: 'Merriweather', serif;
     }
 
     .sidebar img {
-      width: 100px;
-      height: 100px;
-      object-fit: cover;
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
-      margin-bottom: 15px;
-      border: 3px solid #2196f3;
+      margin: 0 auto 20px;
+      display: block;
     }
 
-    .sidebar h1 {
-      font-size: 20px;
+    .sidebar .info p {
+      margin: 10px 0;
+      font-size: 15px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      margin-top: 10px;
+    }
+
+    .sidebar ul li {
+      padding-left: 15px;
+      position: relative;
       margin-bottom: 10px;
-      color: #0d47a1;
     }
 
-    .sidebar h3 {
-      margin-top: 20px;
-      font-size: 14px;
-      color: #1565c0;
-      border-bottom: 1px solid #90caf9;
-      padding-bottom: 4px;
-    }
-
-    .sidebar p,
-    .sidebar li {
-      font-size: 13px;
-      margin: 6px 0;
-    }
-
-    .sidebar a {
-      color: #0d47a1;
-      text-decoration: none;
+    .sidebar ul li::before {
+      content: '✔';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-size: 12px;
     }
 
     .main {
-      padding: 30px;
+      padding: 40px 30px;
+    }
+
+    .main h1 {
+      font-size: 32px;
+      font-family: 'Merriweather', serif;
+      color: var(--primary);
+      margin-bottom: 5px;
+    }
+
+    .main h3 {
+      font-size: 16px;
+      font-weight: 400;
+      color: var(--accent);
+      margin-bottom: 20px;
     }
 
     .section {
-      margin-bottom: 25px;
+      margin-bottom: 30px;
     }
 
     .section h2 {
-      font-size: 18px;
-      margin-bottom: 10px;
-      color: #1976d2;
-      border-bottom: 2px solid #2196f3;
+      font-size: 20px;
+      color: var(--primary);
+      border-bottom: 2px solid var(--accent);
       padding-bottom: 5px;
+      margin-bottom: 10px;
+      font-family: 'Merriweather', serif;
     }
 
-    ul {
-      margin-left: 20px;
+    .section ul {
+      list-style: disc;
+      padding-left: 20px;
     }
 
-    ul li {
-      margin-bottom: 8px;
+    .section ul li {
+      margin-bottom: 10px;
     }
 
     .job {
-      margin-bottom: 15px;
+      margin-bottom: 20px;
     }
 
     .job-title {
       font-weight: 600;
-      font-size: 15px;
-      color: #0d47a1;
+      font-size: 16px;
+      color: #222;
     }
 
     .job-date {
-      font-size: 13px;
+      font-size: 14px;
+      color: #666;
       font-style: italic;
-      color: #555;
+      margin-bottom: 8px;
     }
 
-    @media print {
-      body {
-        background: white;
-        padding: 0;
-      }
-
+    @media screen and (max-width: 768px) {
       .resume {
-        box-shadow: none;
-        border-radius: 0;
+        grid-template-columns: 1fr;
       }
 
-      .sidebar img {
-        display: none;
+      .sidebar {
+        text-align: center;
       }
     }
   </style>
 </head>
+
 <body>
   <div class="resume">
     <div class="sidebar">
-      <img src="rohan.png" alt="Rohan Negi" />
-      <h1>Rohan Negi</h1>
+      <img src="rohan.png" alt="Rohan Negi">
+      <h2>Contact</h2>
+      <div class="info">
+        <p><strong>Email:</strong><br> negirohan887@gmail.com</p>
+        <p><strong>Phone:</strong><br> 6395271496</p>
+        <p><strong>Location:</strong><br> Vasundhara, Ghaziabad</p>
+      </div>
 
-      <h3>Profile Summary</h3>
-      <p>Passionate and disciplined baker with hands-on experience in baking, cake decoration, and pastry preparation. Known for creativity, hygiene practices, and teamwork in fast-paced kitchen environments.</p>
-
-      <h3>Contact</h3>
-      <p><strong>Email:</strong><br><a href="mailto:negirohan887@gmail.com">negirohan887@gmail.com</a></p>
-      <p><strong>Phone:</strong><br>6395271496</p>
-      <p><strong>Location:</strong><br>Vasundhara, Ghaziabad</p>
-
-      <h3>Languages</h3>
+      <h2>Languages</h2>
       <ul>
         <li>Hindi – Native</li>
         <li>English – Proficient</li>
       </ul>
+
+      <h2>Skills</h2>
+      <ul>
+        <li>Bakery & Pastry Production</li>
+        <li>Basic Kitchen Operations</li>
+        <li>Cake Decoration</li>
+        <li>Food Safety & Hygiene</li>
+        <li>Inventory Handling</li>
+        <li>Creativity</li>
+      </ul>
+
+      <h2>Hobbies</h2>
+      <ul>
+        <li>Cooking</li>
+        <li>Travelling</li>
+        <li>Reading Books</li>
+      </ul>
     </div>
 
     <div class="main">
+      <h1>Rohan Negi</h1>
+      <h3>Commis III – Bakery & Confectionery</h3>
+
       <div class="section">
-        <h2>Objective</h2>
-        <p>To secure a challenging position in the bakery and confectionery industry where I can apply my knowledge and skills while continuously learning and contributing to the team’s success.</p>
+        <h2>Career Objective</h2>
+        <p>To obtain the role of Commis III in a professional kitchen where I can utilize my bakery and confectionery
+          training, contribute to high-quality food production, and develop under skilled chefs in a hotel environment.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Professional Summary</h2>
+        <p>Dedicated and detail-oriented bakery professional with hands-on experience in pastry preparation, bread
+          baking, and cake decoration. Trained under experienced chefs at Theo’s Food Pvt. Ltd, with strong
+          understanding of hygiene, food safety, and kitchen operations. Seeking a Commis III position in a reputed
+          hotel to contribute culinary skills and grow in the hospitality industry.</p>
       </div>
 
       <div class="section">
@@ -163,44 +222,29 @@
       </div>
 
       <div class="section">
-        <h2>Skills</h2>
-        <ul>
-          <li>Baking techniques</li>
-          <li>Pastry preparation</li>
-          <li>Cake decoration</li>
-          <li>Inventory management</li>
-          <li>Customer service</li>
-          <li>Teamwork & communication</li>
-          <li>Time management</li>
-          <li>Product innovation</li>
-        </ul>
-      </div>
-
-      <div class="section">
-        <h2>Experience</h2>
-
+        <h2>Professional Experience</h2>
         <div class="job">
-          <div class="job-title">Industrial Training – Theos Manufacturing Pvt. Ltd., Noida</div>
+          <div class="job-title">Job Training – Theo’s Food Pvt. Ltd, Noida</div>
           <div class="job-date">March 2025 – Present</div>
           <ul>
-            <li>Prepared bread, pastries, and custom cakes for events.</li>
-            <li>Maintained cleanliness and food safety standards.</li>
-            <li>Worked with senior chefs on product development.</li>
-            <li>Assisted in managing inventory and baking equipment.</li>
+            <li>Assisted in daily bakery operations including dough preparation and baking procedures.</li>
+            <li>Supported the team in packaging and maintaining display counters.</li>
+            <li>Handled guest queries and ensured timely service and cleanliness.</li>
           </ul>
         </div>
 
         <div class="job">
-          <div class="job-title">Job Training – Theos Manufacturing Pvt. Ltd., Noida</div>
+          <div class="job-title">Industrial Training – Theo’s Food Pvt. Ltd, Noida</div>
           <div class="job-date">Sept 2024 – March 2025</div>
           <ul>
-            <li>Supported baking processes and dough preparation.</li>
-            <li>Handled packaging and customer queries.</li>
-            <li>Helped with pastry decorating and display setup.</li>
+            <li>Prepared breads, cookies, and pastries under supervision of pastry chefs.</li>
+            <li>Maintained hygiene and food safety protocols as per industry standards.</li>
+            <li>Assisted in ingredient preparation, equipment handling, and stock rotation.</li>
           </ul>
         </div>
       </div>
     </div>
   </div>
 </body>
+
 </html>
