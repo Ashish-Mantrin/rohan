@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rohan Negi - Resume</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Roboto+Slab:wght@400;700&display=swap"
+        rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f5f5;
+            color: #000;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .resume-container {
+            width: 210mm;
+            min-height: 297mm;
+            background: #fff;
+            display: grid;
+            grid-template-columns: 270px 1fr;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            animation: fadeIn 0.8s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .sidebar {
+            background-color: #eaeaea;
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .sidebar-top {
+            flex-grow: 1;
+        }
+
+        .sidebar img {
+            width: 110px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 2px solid #000;
+            object-fit: cover;
+        }
+
+        .sidebar h1 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .sidebar h3 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 16px;
+            margin-top: 20px;
+            margin-bottom: 8px;
+            border-bottom: 1px solid #000;
+            padding-bottom: 4px;
+        }
+
+        .sidebar p,
+        .sidebar li {
+            font-size: 14px;
+            margin-bottom: 6px;
+            line-height: 1.5;
+        }
+
+        .sidebar a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .main {
+            padding: 30px;
+        }
+
+        h2 {
+            font-family: 'Roboto Slab', serif;
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-size: 18px;
+            border-bottom: 1.5px solid #000;
+            padding-bottom: 4px;
+        }
+
+        .section {
+            margin-bottom: 25px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+
+        .job {
+            margin-bottom: 15px;
+        }
+
+        .job-title {
+            font-weight: 700;
+            font-size: 15px;
+        }
+
+        .job-date {
+            font-style: italic;
+            font-size: 13px;
+            color: #333;
+        }
+
+        .skills ul li {
+            padding-left: 10px;
+            position: relative;
+            border-left: 2px solid #000;
+        }
+
+        /* Print Styles */
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+                display: block;
+            }
+
+            .resume-container {
+                box-shadow: none;
+                border-radius: 0;
+                width: 100%;
+                min-height: auto;
+            }
+
+            .sidebar img {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="resume-container">
+        <div class="sidebar">
+            <div class="sidebar-top">
+                <img src="rohan.png" alt="Rohan Negi" />
+                <h1>Rohan Negi</h1>
+
+                <h3>Profile Summary</h3>
+                <p>Passionate and disciplined baker with hands-on experience in baking, cake decoration, and pastry
+                    preparation. Known for creativity, hygiene practices, and teamwork in fast-paced kitchen
+                    environments.</p>
+
+                <h3>Contact</h3>
+                <p><strong>Email:</strong><br><a href="mailto:negirohan887@gmail.com">negirohan887@gmail.com</a></p>
+                <p><strong>Phone:</strong><br>6395271496</p>
+                <p><strong>Location:</strong><br>Vasundhara, Ghaziabad</p>
+
+                <h3>Languages</h3>
+                <ul>
+                    <li>Hindi – Native</li>
+                    <li>English – Proficient</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="section">
+                <h2>Objective</h2>
+                <p>To secure a challenging position in the bakery and confectionery industry where I can apply my
+                    knowledge and skills while continuously learning and contributing to the team’s success.</p>
+            </div>
+
+            <div class="section">
+                <h2>Education</h2>
+                <ul>
+                    <li><strong>Diploma in Bakery & Confectionery</strong> – 2024<br>Govt. Food Science Training Centre
+                    </li>
+                    <li><strong>Higher Secondary (12th)</strong> – 2020<br>Uttarakhand Board</li>
+                    <li><strong>Secondary School (10th)</strong> – 2018<br>Uttarakhand Board</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Skills</h2>
+                <ul class="skills">
+                    <li>Baking techniques</li>
+                    <li>Pastry preparation</li>
+                    <li>Cake decoration</li>
+                    <li>Inventory management</li>
+                    <li>Customer service</li>
+                    <li>Teamwork & communication</li>
+                    <li>Time management</li>
+                    <li>Product innovation</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Experience</h2>
+
+                <div class="job">
+                    <div class="job-title">Industrial Training – Theos Manufacturing Pvt. Ltd., Noida</div>
+                    <div class="job-date">March 2025 – Present</div>
+                    <ul>
+                        <li>Prepared bread, pastries, and custom cakes for events.</li>
+                        <li>Maintained cleanliness and food safety standards.</li>
+                        <li>Worked with senior chefs on product development.</li>
+                        <li>Assisted in managing inventory and baking equipment.</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <div class="job-title">Job Training – Theos Manufacturing Pvt. Ltd., Noida</div>
+                    <div class="job-date">Sept 2024 – March 2025</div>
+                    <ul>
+                        <li>Supported baking processes and dough preparation.</li>
+                        <li>Handled packaging and customer queries.</li>
+                        <li>Helped with pastry decorating and display setup.</li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <div class="resume2">
+                <a href="index2.html">Resume 2</a>
+            </div>
+
+
+            <div class="resume3">
+                <a href="index3.html">Resume 3</a>
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
