@@ -64,14 +64,6 @@
       flex-direction: column;
       justify-content: space-between;
     }
-    .skills {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    }
-.skills li {
-    width: 250px;
-    }
     .sidebar img {
       width: 153px;
       height: 159px;
@@ -140,7 +132,13 @@
       color: #333;
       margin-bottom: 3px;
     }
-
+  .skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 40px; /* row-gap and column-gap */
+    list-style-type: disc;
+    padding-left: 20px; /* for bullet indent */
+  }
     .skills ul li {
       padding-left: 10px;
       position: relative;
@@ -275,6 +273,7 @@
 
 
 </html>
+
 
 
 
