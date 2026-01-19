@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rohan Negi – Resume</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Epunda+Slab:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;700&display=swap" rel="stylesheet">
 
   <style>
     * {
@@ -16,144 +16,125 @@
     }
 
     body {
-      font-family: "Epunda Slab", serif;
-      background-color: #ffffff;
-      color: #000;
+      font-family: "Epilogue", sans-serif;
+      background: #f4f4f4;
       display: flex;
       justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      margin: -6px 410px;
-    }
-
-    .section p {
-      font-size: 15px;
-    }
-
-    li {
-      line-height: 23px;
-      font-size: 15px;
+      padding: 20px;
+      color: #000;
     }
 
     .resume-container {
-      width: 190mm;
-      min-height: 260mm;
+      width: 210mm;
+      min-height: 297mm;
       background: #fff;
       display: grid;
-      grid-template-columns: 234px 1fr;
-      overflow: hidden;
-      animation: fadeIn 0.8s ease-in-out;
+      grid-template-columns: 30% 70%;
     }
 
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
+    /* SIDEBAR */
     .sidebar {
-      background-color: #eaeaea;
-      padding: 6px 10px 2px 10px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      background: #ededed;
+      padding: 20px;
     }
 
     .sidebar img {
-      width: 153px;
-      height: 159px;
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
-      margin-bottom: 20px;
+      display: block;
+      margin: 0 auto 15px;
     }
 
     .sidebar h1 {
-      font-size: 26px;
-      margin-bottom: 10px;
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 15px;
     }
 
     .sidebar h3 {
-      font-size: 18px;
-      margin-top: 10px;
-      margin-bottom: 8px;
+      font-size: 16px;
+      margin-top: 18px;
+      margin-bottom: 6px;
       border-bottom: 1px solid #000;
       padding-bottom: 4px;
     }
 
     .sidebar p,
     .sidebar li {
-      font-size: 15px;
-      margin-bottom: 6px;
+      font-size: 14px;
       line-height: 20px;
+      margin-bottom: 5px;
     }
 
     .sidebar a {
-      color: #000;
       text-decoration: none;
+      color: #000;
     }
 
+    .sidebar ul {
+      margin-left: 18px;
+    }
+
+    /* MAIN CONTENT */
     .main {
-      padding: 10px 10px 2px 10px;
+      padding: 25px;
     }
 
     h2 {
-      font-weight: 700;
-      margin-bottom: 10px;
       font-size: 18px;
+      margin-bottom: 8px;
       border-bottom: 1.5px solid #000;
       padding-bottom: 4px;
     }
 
     .section {
-      margin-bottom: 10px;
+      margin-bottom: 16px;
+    }
+
+    .section p {
+      font-size: 14px;
+      line-height: 22px;
     }
 
     ul {
-      margin-left: 20px;
+      margin-left: 18px;
+    }
+
+    li {
+      font-size: 14px;
+      line-height: 22px;
     }
 
     .job {
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
 
     .job-title {
-      font-weight: 700;
-      font-size: 16px;
+      font-weight: 600;
+      font-size: 15px;
     }
 
     .job-date {
+      font-size: 13px;
       font-style: italic;
-      font-size: 14px;
-      color: #333;
-      margin-bottom: 3px;
+      color: #444;
+      margin-bottom: 4px;
     }
 
     .skills {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 8px 40px;
-      list-style-type: disc;
-      padding-left: 20px;
+      gap: 6px 30px;
     }
 
     @media print {
       body {
-        background: white;
+        background: #fff;
         padding: 0;
-        display: block;
       }
-
       .resume-container {
-        box-shadow: none;
         width: 100%;
-      }
-
-      .sidebar img {
-        display: none;
       }
     }
   </style>
@@ -165,89 +146,83 @@
 
     <!-- SIDEBAR -->
     <div class="sidebar">
-      <div>
-        <img src="rohan-2.png" alt="Rohan Negi" />
-        <h1>Rohan Negi</h1>
+      <img src="rohan-2.png" alt="Rohan Negi">
 
-        <div class="section">
-          <h2>Career Objective</h2>
-          <p>
-  I am a skilled pastry professional with one year of experience in bakery and confectionery.
-  I aspire to work on a cruise ship as a <strong>Commis Pastry</strong>, where I can contribute to high-quality dessert production,
-  learn from experienced chefs, and maintain the highest standards of hygiene and food safety.
-</p>
+      <h1>Rohan Negi</h1>
 
-        </div>
+      <h3>Contact</h3>
+      <p><strong>Email:</strong><br>
+        <a href="mailto:negirohan887@gmail.com">negirohan887@gmail.com</a>
+      </p>
+      <p><strong>Phone:</strong> +91 635271496</p>
+      <p><strong>Location:</strong><br>Ghaziabad, Uttar Pradesh, India</p>
 
-        <h3>Contact</h3>
-        <p><strong>Email:</strong><br>
-          <a href="mailto:negirohan887@gmail.com">negirohan887@gmail.com</a>
-        </p>
-        <p><strong>Phone:</strong> +91 635271496</p>
-        <p><strong>Location:</strong><br>Vasundhara, Ghaziabad, India</p>
+      <h3>Personal Details</h3>
+      <ul>
+        <li>Date of Birth: 04 April 2003</li>
+        <li>Nationality: Indian</li>
+        <li>Languages: English, Hindi</li>
+        <li>Marital Status: Single</li>
+      </ul>
 
-        <h3>Personal Details</h3>
-        <ul>
-          <li><strong>Date of Birth:</strong> 04 April 2003</li>
-          <li><strong>Nationality:</strong> Indian</li>
-          <li><strong>Gender:</strong> Male</li>
-          <li><strong>Marital Status:</strong> Single</li>
-          <li><strong>Languages:</strong> English, Hindi</li>
-          <li><strong>Permanent Address:</strong> Pauri Garhwal, Uttarakhand</li>
-          <li><strong>Passport Status:</strong> Available</li>
-        </ul>
-
-        <h3>Hobbies</h3>
-        <ul>
-          <li>Cooking & learning new recipes</li>
-          <li>Reading self-improvement books</li>
-          <li>Playing volleyball</li>
-        </ul>
-      </div>
+      <h3>Hobbies</h3>
+      <ul>
+        <li>Cooking & baking</li>
+        <li>Learning new recipes</li>
+        <li>Playing volleyball</li>
+      </ul>
     </div>
 
-    <!-- MAIN CONTENT -->
+    <!-- MAIN -->
     <div class="main">
+
+      <div class="section">
+        <h2>Career Objective</h2>
+        <p>
+          Motivated pastry professional with hands-on experience in bakery and confectionery.
+          Seeking an entry-level position in a hotel or professional kitchen where I can apply my skills,
+          maintain high hygiene standards, and grow under experienced chefs.
+        </p>
+      </div>
 
       <div class="section">
         <h2>Professional Summary</h2>
         <p>
-         Dedicated and hardworking pastry professional
-with hands-on experience in bakery and
-confectionery production. Trained at Theo's Food
-Pvt. Ltd. with a strong focus on hygiene, food safety, and organized kitchen operations.
-Experienced in high-volume production environments while maintaining quality 
-cleanliness, and presentation standards required
-for cruise line operations
+          Dedicated and hardworking bakery professional trained at Theo’s Food Pvt. Ltd.
+          Experienced in daily bakery production, mise-en-place, food safety practices,
+          and maintaining quality standards in a fast-paced kitchen environment.
         </p>
       </div>
 
       <div class="section">
         <h2>Education</h2>
         <ul>
-          <li><strong>Diploma in Bakery & Confectionery</strong> – 2024<br>
-            Govt. Food Science Training Centre – 1st Division
+          <li>
+            <strong>Diploma in Bakery & Confectionery</strong> – 2024<br>
+            Govt. Food Science Training Centre | 1st Division
           </li>
-          <li><strong>Higher Secondary (12<sup>th</sup>)</strong> – 2020<br>
-            Uttarakhand Board – 1st Division
+          <li>
+            <strong>Higher Secondary (12th)</strong> – 2020<br>
+            Uttarakhand Board | 1st Division
           </li>
-          <li><strong>Secondary School (10<sup>th</sup>)</strong> – 2018<br>
-            Uttarakhand Board – 1st Division
+          <li>
+            <strong>Secondary School (10th)</strong> – 2018<br>
+            Uttarakhand Board | 1st Division
           </li>
         </ul>
       </div>
 
       <div class="section">
-        <h2>Professional Experience</h2>
+        <h2>Work Experience</h2>
 
         <div class="job">
           <div class="job-title">Job Training – Theo’s Food Pvt. Ltd., Noida</div>
           <div class="job-date">March 2025 – Present</div>
           <ul>
-            <li>Maintained kitchen cleanliness and organized ingredients and tools efficiently.</li>
-            <li>Learned and applied baking techniques for decorating cakes, pastries, and desserts.</li>
-            <li>Assisted the team in maintaining high quality and presentation standards.</li>
-            <li>Worked efficiently under pressure to meet daily production targets.</li>
+            <li>Assisting in daily bakery and pastry production.</li>
+            <li>Maintaining cleanliness and hygiene of the work area.</li>
+            <li>Supporting cake decoration and finishing tasks.</li>
+            <li>Following standard recipes and kitchen procedures.</li>
           </ul>
         </div>
 
@@ -255,9 +230,9 @@ for cruise line operations
           <div class="job-title">Industrial Training – Theo’s Food Pvt. Ltd., Noida</div>
           <div class="job-date">September 2024 – March 2025</div>
           <ul>
-            <li>Prepared baked items according to standardized recipes and quality guidelines.</li>
-            <li>Maintained daily mise-en-place and kitchen hygiene.</li>
-            <li>Ensured consistent quality of bakery products through self-auditing.</li>
+            <li>Prepared bakery items under supervision.</li>
+            <li>Handled mise-en-place and basic kitchen operations.</li>
+            <li>Followed food safety and hygiene guidelines.</li>
           </ul>
         </div>
       </div>
@@ -265,16 +240,14 @@ for cruise line operations
       <div class="section">
         <h2>Key Skills</h2>
         <ul class="skills">
-          <li>Bakery & Pastry Production</li>
-          <li>Cake Decoration & Finishing</li>
-          <li>Food Safety & Hygiene Practices</li>
+          <li>Bakery & Pastry Preparation</li>
+          <li>Cake Decoration Basics</li>
+          <li>Food Safety & Hygiene</li>
           <li>HACCP Awareness</li>
-          <li>Mise-en-place Preparation</li>
-          <li>Basic Kitchen Operations</li>
-          <li>Inventory Handling</li>
-          <li>Team Coordination</li>
+          <li>Mise-en-place</li>
+          <li>Kitchen Discipline</li>
+          <li>Teamwork</li>
           <li>Time Management</li>
-          <li>Creativity in Presentation</li>
         </ul>
       </div>
 
@@ -283,6 +256,3 @@ for cruise line operations
 
 </body>
 </html>
-
-
-
